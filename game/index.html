@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sizzle &amp; Serve — a fast-paced kitchen game</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; padding: 0; background: #2b2118; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: "Trebuchet MS", Verdana, sans-serif; }
+  #wrap { position: relative; width: 1280px; height: 800px; }
+  canvas { display: block; width: 1280px; height: 800px; background: #f3e2c7; border-radius: 10px; }
+  #hint { position: absolute; left: 0; right: 0; bottom: -26px; text-align: center; color: #cbb59a; font-size: 13px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="hint">Move: WASD / Arrows &nbsp;·&nbsp; Interact: E or Space &nbsp;·&nbsp; Pause: P &nbsp;·&nbsp; Mute: M &nbsp;·&nbsp; Restart: R</div>
+</div>
+<script src="src/config.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/input.js"></script>
+<script src="src/kitchen.js"></script>
+<script src="src/orders.js"></script>
+<script src="src/player.js"></script>
+<script src="src/render.js"></script>
+<script src="src/shots.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
